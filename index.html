@@ -1,14 +1,137 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Testing githubpages</title>
-		<style>
-			p.wow_its_so_big::first-letter {
-				font-size: 35px;
-			}
-		</style>
-	</head>
-	<body>
-		<p class="wow_its_so_big">Hello world<p>
-	</body>
+    <head>
+        <title> Experimenting with HTML</title>
+        <!-- Internal CSS -->
+        <style>
+            h1, h2, h3, h4 {
+                color:brown;
+            }
+        </style> 
+        
+        <link href="CSS/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 id="top">On this page I <del>fool around</del> <ins>experiment</ins> with html tags</h1>
+        <p>My purpose on the page is to <s>procrastinate</s> <b>get deeper understanding about HTML and CSS</b></p>
+
+        <h2> To see the effect of using various tags </h2>
+        <p> It's fascinating to me how a tag can <i>change the appearance of a text</i> </p>
+
+        <hr />
+
+        <p> CO<sub>2</sub> and a<sup>2</sup> + b<sup>2</sup></p>
+        <p><q>This is a quotation</q></p>
+
+        <div class="box">
+            <p class="clever" id="boxed">Hover over this abbreviation <abbr title="Good game well played">GGWP</abbr></p>
+        </div>
+
+        <p class="clever">Hover over this acronym <acronym title="Bullet for my valentine">BFMV</acronym></p>
+
+
+        <p class="clever">Playing with list </p>
+
+        <h4>I would like to learn next topics:</h4>
+        <ul>
+            <li>Linux</li>
+            <ul>
+                <li>Command prompt</li>
+                <li>Packets installation</li>
+            </ul>
+            <li>Python</li>
+            <ol>
+                <li>Syntax</li>
+                <li>OOP</li>
+            </ol>
+            <dl>
+                <dt>JavaScript in general</dt>
+                <dd>I would like to have solid knowledge of programming with javascript</dd>
+                <dt>React Framework</dt>
+                <dd>I also would love to be comfortable using react framework and components</dd>
+            </dl>
+        </ul>
+        <p><a href="Testing_links.html">Link to other page</a></p>
+
+
+        <p class="clever"> Tables to play with </p>
+
+        <!-- Tables chapter -->
+        <table>
+            <thead class="table_head">
+                <tr>
+                    <th></th>
+                    <th>Income</th>
+                    <th>Expenditure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>February 1st</th>
+                    <td rowspan="2">360</td>
+                    <td>13</td>
+                </tr>
+                <tr class="even">
+                    <th>March 1st</th>
+                    <td>113</td>
+                </tr>
+                <tr>
+                    <th>April 1st</th>
+                    <td>2260</td>
+                    <td>535</td>
+                </tr>
+                <tr class="even">
+                    <th>
+                        May 1st
+                    </th>
+                    <td> 412</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td>1000</td>
+                    <td>200</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br /> 
+        <hr />
+
+
+        <p class="clever"> Image adding </p>
+        <figure>
+            <img src="Media/two_mountains.jpg" alt="two_mountains"> <br>
+            <figcaption>Two tents and a mountain in the background</figcaption>
+        </figure>
+        
+        <!--  Forms chapter  -->
+        <p class="clever">And as you can see here I experiment with <em>Forms</em></p>
+        <fieldset>
+            <legend>Contact details</legend>
+            <form action="">
+                <p>Username:
+                    <input type="text" name="username" size="15" maxlength="15">
+                </p>
+                <p>
+                    Password:
+                    <input type="password" name="password" size="15">
+                </p>
+                <textarea name="comments" id="myD" cols="30" rows="10" onclick="myfunc()">Write your thoughts</textarea>
+            </form>
+        </fieldset>
+
+        <p id="down"><a href="#top">To the top</a></p>
+
+
+        <!-- Occasional scripts for the page -->
+        <script>
+            function myfunc() {
+                const D = document.getElementById("myD");
+                D.innerHTML = "The text was changed by JavaScript fucntion";
+            }
+        </script>
+    </body>
 </html>
