@@ -12,7 +12,7 @@
         html{
             background-color: cadetblue;
         }
-        div:not(.column-3) {
+        div:not(.column-3, .nav) {
             padding: 1%;
             margin: 1%;
             
@@ -46,37 +46,31 @@
         p{
             padding: 5px;
         }
+        .nav {
+            width: 18%;
+            margin-left: 5px;
+            float: left;
+            text-align: center;
+            border: 3px solid darkslategrey;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <div style="background-color: burlywood;">
+    <div style="background-color: burlywood; float: left; width: 100%;">
         <h1>Main header</h1>
-        <p>
-            Sed ultrices mollis elit in ultricies. Nullam at varius purus. 
-                Nulla vulputate dolor nec est dictum rutrum. 
-                Vivamus varius, turpis fringilla congue sodales, diam eros accumsan nisl, non fringilla augue ante vitae lorem. 
-                Praesent nec condimentum augue, vitae lobortis sem. Sed eros arcu, laoreet non ante et, eleifend iaculis eros. 
-                Nullam condimentum, purus sit amet varius semper, lacus lorem laoreet mauris, vitae pharetra elit nulla in eros. 
-                Nullam rhoncus nunc ipsum, vitae molestie sem dignissim nec. Curabitur lacus odio, mattis et iaculis eu, maximus quis lorem. 
-                Suspendisse blandit lacinia orci, id luctus orci condimentum sed. Pellentesque ut ipsum egestas, maximus eros in, pretium lorem. 
-                Aenean efficitur ante nisi, iaculis congue elit blandit vel. Nulla rutrum neque nec iaculis varius.
-
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                Donec laoreet scelerisque nisl non pharetra. Nulla ipsum neque, gravida quis cursus non, porta ut nunc. 
-                Vivamus vestibulum faucibus tempor. 
-        </p>
+        
+        <div class="nav"><p>Clause1</p></div>
+        <div class="nav"><p>Clause2</p></div>
+        <div class="nav"><p>Clause3</p></div>
+        <div class="nav"><p>Clause4</p></div>
+        <div class="nav"><p>Clause5</p></div>
     </div>
     <div class="column-3">
         <div class="column1">
             <h4>Left bar header</h4>
             <p>
-
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                Donec laoreet scelerisque nisl non pharetra. Nulla ipsum neque, gravida quis cursus non, porta ut nunc. 
-                Vivamus vestibulum faucibus tempor. Donec mi odio, posuere ac lectus quis, pharetra rhoncus tortor. 
-                Donec sed nunc ut lorem imperdiet placerat. Nunc faucibus augue a massa laoreet, at pharetra magna ultricies. 
-                Cras eget fringilla dui, a fringilla orci. Curabitur maximus auctor hendrerit. Cras lacinia feugiat nulla. 
-                Morbi quis tempus felis, id auctor massa.
+                asdadlad
             </p>
         </div>
         <div class="column2">
