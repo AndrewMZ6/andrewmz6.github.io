@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div aligning</title>
+
+    <style>
+        body{
+            border-style: dashed;
+            border-width: 3px;
+            border-color: forestgreen;
+            background-color: cadetblue;
+            overflow: auto;
+        }
+        html{
+            background-color: slateblue;
+            border-color: chocolate;
+        }
+        div:not(.blake) {
+            padding: 10px;
+            margin: 10px;
+            border-style:double;
+            float: left;
+            background-color: burlywood;
+            width: 400px;
+            
+        }
+        .first {
+            clear: left;
+        }
+        p {
+            float: none;
+            background-color: dimgray;
+            color: bisque;
+            padding: 5px;
+            border-color: #2a82a5;
+            font-size: 16px;
+        }
+        h4 {
+            border-style: dashed;
+            border-color: mediumaquamarine;
+        }
+        h4, ul {
+            float: left;
+        }
+        ul {
+            border-color:crimson;
+            border-style: inset;
+        }
+        li {
+            border-color: inherit;
+            border-style: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="blake">
+        <div class="first">
+            <h4>The header of a paragraph</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus enim eget fringilla efficitur. 
+                Ut vel aliquet tellus. Donec eget est vel risus facilisis tincidunt ut nec dolor. 
+                Suspendisse fringilla nulla elementum mi pretium, non iaculis est lobortis. 
+                Phasellus non pellentesque leo, id rhoncus ligula. 
+                Pellentesque luctus arcu velit, nec pulvinar magna blandit a. In erat nibh, sollicitudin vitae ex et, pretium fringilla ante.
+
+                Sed ultrices mollis elit in ultricies. Nullam at varius purus. 
+                Nulla vulputate dolor nec est dictum rutrum. 
+                Vivamus varius, turpis fringilla congue sodales, diam eros accumsan nisl, non fringilla augue ante vitae lorem. 
+                Praesent nec condimentum augue, vitae lobortis sem. Sed eros arcu, laoreet non ante et, eleifend iaculis eros. 
+                Nullam condimentum, purus sit amet varius semper, lacus lorem laoreet mauris, vitae pharetra elit nulla in eros. 
+                Nullam rhoncus nunc ipsum, vitae molestie sem dignissim nec. Curabitur lacus odio, mattis et iaculis eu, maximus quis lorem. 
+                Suspendisse blandit lacinia orci, id luctus orci condimentum sed. Pellentesque ut ipsum egestas, maximus eros in, pretium lorem. 
+                Aenean efficitur ante nisi, iaculis congue elit blandit vel. Nulla rutrum neque nec iaculis varius.
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Donec laoreet scelerisque nisl non pharetra. Nulla ipsum neque, gravida quis cursus non, porta ut nunc. 
+                Vivamus vestibulum faucibus tempor. Donec mi odio, posuere ac lectus quis, pharetra rhoncus tortor. 
+                Donec sed nunc ut lorem imperdiet placerat. Nunc faucibus augue a massa laoreet, at pharetra magna ultricies. 
+                Cras eget fringilla dui, a fringilla orci. Curabitur maximus auctor hendrerit. Cras lacinia feugiat nulla. 
+                Morbi quis tempus felis, id auctor massa.
+            </p>
+            <ul>
+                <li>
+                    important list item #1
+                </li>
+                <li>important list item #2</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus enim eget fringilla efficitur. 
+                Ut vel aliquet tellus. Donec eget est vel risus facilisis tincidunt ut nec dolor. 
+                Suspendisse fringilla nulla elementum mi pretium, non iaculis est lobortis. 
+                Phasellus non pellentesque leo, id rhoncus ligula. 
+                Pellentesque luctus arcu velit, nec pulvinar magna blandit a. In erat nibh, sollicitudin vitae ex et, pretium fringilla ante.
+
+                Sed ultrices mollis elit in ultricies. Nullam at varius purus. 
+                Nulla vulputate dolor nec est dictum rutrum. 
+                Vivamus varius, turpis fringilla congue sodales, diam eros accumsan nisl, non fringilla augue ante vitae lorem. 
+                Praesent nec condimentum augue, vitae lobortis sem. Sed eros arcu, laoreet non ante et, eleifend iaculis eros. 
+                Nullam condimentum, purus sit amet varius semper, lacus lorem laoreet mauris, vitae pharetra elit nulla in eros. 
+                Nullam rhoncus nunc ipsum, vitae molestie sem dignissim nec. Curabitur lacus odio, mattis et iaculis eu, maximus quis lorem. 
+                Suspendisse blandit lacinia orci, id luctus orci condimentum sed. Pellentesque ut ipsum egestas, maximus eros in, pretium lorem. 
+                Aenean efficitur ante nisi, iaculis congue elit blandit vel. Nulla rutrum neque nec iaculis varius.
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Donec laoreet scelerisque nisl non pharetra. Nulla ipsum neque, gravida quis cursus non, porta ut nunc. 
+                Vivamus vestibulum faucibus tempor. Donec mi odio, posuere ac lectus quis, pharetra rhoncus tortor. 
+                Donec sed nunc ut lorem imperdiet placerat. Nunc faucibus augue a massa laoreet, at pharetra magna ultricies. 
+                Cras eget fringilla dui, a fringilla orci. Curabitur maximus auctor hendrerit. Cras lacinia feugiat nulla. 
+                Morbi quis tempus felis, id auctor massa.
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus enim eget fringilla efficitur. 
+                Ut vel aliquet tellus. Donec eget est vel risus facilisis tincidunt ut nec dolor. 
+                Suspendisse fringilla nulla elementum mi pretium, non iaculis est lobortis. 
+                Phasellus non pellentesque leo, id rhoncus ligula. 
+                Pellentesque luctus arcu velit, nec pulvinar magna blandit a. In erat nibh, sollicitudin vitae ex et, pretium fringilla ante.
+
+                Sed ultrices mollis elit in ultricies. Nullam at varius purus. 
+                Nulla vulputate dolor nec est dictum rutrum. 
+                Vivamus varius, turpis fringilla congue sodales, diam eros accumsan nisl, non fringilla augue ante vitae lorem. 
+                Praesent nec condimentum augue, vitae lobortis sem. Sed eros arcu, laoreet non ante et, eleifend iaculis eros. 
+                Nullam condimentum, purus sit amet varius semper, lacus lorem laoreet mauris, vitae pharetra elit nulla in eros. 
+                Nullam rhoncus nunc ipsum, vitae molestie sem dignissim nec. Curabitur lacus odio, mattis et iaculis eu, maximus quis lorem. 
+                Suspendisse blandit lacinia orci, id luctus orci condimentum sed. Pellentesque ut ipsum egestas, maximus eros in, pretium lorem. 
+                Aenean efficitur ante nisi, iaculis congue elit blandit vel. Nulla rutrum neque nec iaculis varius.
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Donec laoreet scelerisque nisl non pharetra. Nulla ipsum neque, gravida quis cursus non, porta ut nunc. 
+                Vivamus vestibulum faucibus tempor. Donec mi odio, posuere ac lectus quis, pharetra rhoncus tortor. 
+                Donec sed nunc ut lorem imperdiet placerat. Nunc faucibus augue a massa laoreet, at pharetra magna ultricies. 
+                Cras eget fringilla dui, a fringilla orci. Curabitur maximus auctor hendrerit. Cras lacinia feugiat nulla. 
+                Morbi quis tempus felis, id auctor massa.
+            </p>
+        </div>
+    </div>
+    <div class="blake">
+        <div class="first">
+            <h4>The header of a paragraph</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus enim eget fringilla efficitur. 
+                Ut vel aliquet tellus. Donec eget est vel risus facilisis tincidunt ut nec dolor. 
+                Suspendisse fringilla nulla elementum mi pretium, non iaculis est lobortis. 
+                Phasellus non pellentesque leo, id rhoncus ligula. 
+                Pellentesque luctus arcu velit, nec pulvinar magna blandit a. In erat nibh, sollicitudin vitae ex et, pretium fringilla ante.
+
+                Sed ultrices mollis elit in ultricies. Nullam at varius purus. 
+                Nulla vulputate dolor nec est dictum rutrum. 
+                Vivamus varius, turpis fringilla congue sodales, diam eros accumsan nisl, non fringilla augue ante vitae lorem. 
+                Praesent nec condimentum augue, vitae lobortis sem. Sed eros arcu, laoreet non ante et, eleifend iaculis eros. 
+                Nullam condimentum, purus sit amet varius semper, lacus lorem laoreet mauris, vitae pharetra elit nulla in eros. 
+                Nullam rhoncus nunc ipsum, vitae molestie sem dignissim nec. Curabitur lacus odio, mattis et iaculis eu, maximus quis lorem. 
+                Suspendisse blandit lacinia orci, id luctus orci condimentum sed. Pellentesque ut ipsum egestas, maximus eros in, pretium lorem. 
+                Aenean efficitur ante nisi, iaculis congue elit blandit vel. Nulla rutrum neque nec iaculis varius.
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Donec laoreet scelerisque nisl non pharetra. Nulla ipsum neque, gravida quis cursus non, porta ut nunc. 
+                Vivamus vestibulum faucibus tempor. Donec mi odio, posuere ac lectus quis, pharetra rhoncus tortor. 
+                Donec sed nunc ut lorem imperdiet placerat. Nunc faucibus augue a massa laoreet, at pharetra magna ultricies. 
+                Cras eget fringilla dui, a fringilla orci. Curabitur maximus auctor hendrerit. Cras lacinia feugiat nulla. 
+                Morbi quis tempus felis, id auctor massa.
+            </p>
+            <ul>
+                <li>
+                    important list item #1
+                </li>
+                <li>important list item #2</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus enim eget fringilla efficitur. 
+                Ut vel aliquet tellus. Donec eget est vel risus facilisis tincidunt ut nec dolor. 
+                Suspendisse fringilla nulla elementum mi pretium, non iaculis est lobortis. 
+                Phasellus non pellentesque leo, id rhoncus ligula. 
+                Pellentesque luctus arcu velit, nec pulvinar magna blandit a. In erat nibh, sollicitudin vitae ex et, pretium fringilla ante.
+
+                Sed ultrices mollis elit in ultricies. Nullam at varius purus. 
+                Nulla vulputate dolor nec est dictum rutrum. 
+                Vivamus varius, turpis fringilla congue sodales, diam eros accumsan nisl, non fringilla augue ante vitae lorem. 
+                Praesent nec condimentum augue, vitae lobortis sem. Sed eros arcu, laoreet non ante et, eleifend iaculis eros. 
+                Nullam condimentum, purus sit amet varius semper, lacus lorem laoreet mauris, vitae pharetra elit nulla in eros. 
+                Nullam rhoncus nunc ipsum, vitae molestie sem dignissim nec. Curabitur lacus odio, mattis et iaculis eu, maximus quis lorem. 
+                Suspendisse blandit lacinia orci, id luctus orci condimentum sed. Pellentesque ut ipsum egestas, maximus eros in, pretium lorem. 
+                Aenean efficitur ante nisi, iaculis congue elit blandit vel. Nulla rutrum neque nec iaculis varius.
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Donec laoreet scelerisque nisl non pharetra. Nulla ipsum neque, gravida quis cursus non, porta ut nunc. 
+                Vivamus vestibulum faucibus tempor. Donec mi odio, posuere ac lectus quis, pharetra rhoncus tortor. 
+                Donec sed nunc ut lorem imperdiet placerat. Nunc faucibus augue a massa laoreet, at pharetra magna ultricies. 
+                Cras eget fringilla dui, a fringilla orci. Curabitur maximus auctor hendrerit. Cras lacinia feugiat nulla. 
+                Morbi quis tempus felis, id auctor massa.
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus enim eget fringilla efficitur. 
+                Ut vel aliquet tellus. Donec eget est vel risus facilisis tincidunt ut nec dolor. 
+                Suspendisse fringilla nulla elementum mi pretium, non iaculis est lobortis. 
+                Phasellus non pellentesque leo, id rhoncus ligula. 
+                Pellentesque luctus arcu velit, nec pulvinar magna blandit a. In erat nibh, sollicitudin vitae ex et, pretium fringilla ante.
+
+                Sed ultrices mollis elit in ultricies. Nullam at varius purus. 
+                Nulla vulputate dolor nec est dictum rutrum. 
+                Vivamus varius, turpis fringilla congue sodales, diam eros accumsan nisl, non fringilla augue ante vitae lorem. 
+                Praesent nec condimentum augue, vitae lobortis sem. Sed eros arcu, laoreet non ante et, eleifend iaculis eros. 
+                Nullam condimentum, purus sit amet varius semper, lacus lorem laoreet mauris, vitae pharetra elit nulla in eros. 
+                Nullam rhoncus nunc ipsum, vitae molestie sem dignissim nec. Curabitur lacus odio, mattis et iaculis eu, maximus quis lorem. 
+                Suspendisse blandit lacinia orci, id luctus orci condimentum sed. Pellentesque ut ipsum egestas, maximus eros in, pretium lorem. 
+                Aenean efficitur ante nisi, iaculis congue elit blandit vel. Nulla rutrum neque nec iaculis varius.
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Donec laoreet scelerisque nisl non pharetra. Nulla ipsum neque, gravida quis cursus non, porta ut nunc. 
+                Vivamus vestibulum faucibus tempor. Donec mi odio, posuere ac lectus quis, pharetra rhoncus tortor. 
+                Donec sed nunc ut lorem imperdiet placerat. Nunc faucibus augue a massa laoreet, at pharetra magna ultricies. 
+                Cras eget fringilla dui, a fringilla orci. Curabitur maximus auctor hendrerit. Cras lacinia feugiat nulla. 
+                Morbi quis tempus felis, id auctor massa.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
