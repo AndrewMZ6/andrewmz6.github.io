@@ -40,9 +40,6 @@
         h1, h4{
             color: darkslategrey;
         }
-        .column3{
-            min-width: 300px;
-        }
         p{
             padding: 5px;
         }
@@ -61,6 +58,14 @@
             background-color: burlywood;
             color:darkslategrey;
             font-size: 27px;
+        }
+        @media screen and (max-width: 800px) {
+            .column1, .column3 {
+                display: none;
+            }
+            .column2{
+            width: 100%;
+        }
         }
     </style>
 </head>
